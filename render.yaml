@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: telegram-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: NODE_ENV
+        value: production
