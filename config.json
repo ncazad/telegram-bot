@@ -1,0 +1,24 @@
+{
+  "bot": {
+    "token": "8677573246:AAF7ttXr8wIXqEy0eL9CYnL8KRgeIo40b78",
+    "username": "x69xbot_bot",
+    "prefix": ")"
+  },
+  "admins": [7047432575],
+  "owner": 7047432575,
+  "settings": {
+    "language": "en",
+    "maintenance": false,
+    "welcome_message": true,
+    "log_channel": null,
+    "auto_download": true
+  },
+  "database": {
+    "type": "mongodb",
+    "uriMongodb": "mongodb+srv://Hinata:W2fNh.H9iWFU22F@cluster0.cyattib.mongodb.net/OZADNOOB1?retryWrites=true&w=majority&appName=Cluster0"
+  },
+  "credits": {
+    "made_by": "Azadx69x",
+    "version": "2.0.0"
+  }
+}
