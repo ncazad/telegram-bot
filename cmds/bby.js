@@ -124,6 +124,33 @@ export default {
     }
   },
 
+  Reply: async (client, message, replyToId) => {
+    const replyFrom = message.reply_to_message?.from;
+    if (!replyFrom?.is_bot) return;
+
+    const chatId = message.chat.id;
+    const userId = message.from.id;
+    const text = (message.text || "").trim();
+
+    if (!text) return;
+
+    const callApi = async (params) => {
+      const link = `${await baseApiUrl()}/baby`;
+      const response = await axios.get(link, { params, timeout: 15000 });
+      return response.data;
+    };
+
+    try {
+      const data = await callApi({ text, senderID: userId, font: 1 });
+      const reply = data.reply || "...";
+      return client.sendMessage(chatId, reply, {
+        reply_to_message_id: message.message_id
+      });
+    } catch (err) {
+      console.error("Baby Reply error:", err.message);
+    }
+  },
+
   onChat: async (client, message) => {
     const text = message.text?.toLowerCase() || "";
     if (text === "bby" || text === "baby" || text.startsWith("bby ") || text.startsWith("baby ")) {
