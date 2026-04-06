@@ -1,0 +1,35 @@
+# ── General ──────────────────────────────────────────────
+BANNED_MSG=⛔ You are banned from using this bot.
+MAINTENANCE_MSG=🔧 Bot is under maintenance. Please try again later.
+ERROR_MSG=❌ An error occurred. Please try again.
+NO_PERMISSION=🚫 You don't have permission to use this command.
+
+# ── Prefix ───────────────────────────────────────────────
+PREFIX_ONLY=🤖 Hey there, {NAME}! I noticed you typed the prefix "{PREFIX}".\n\n💡 Tip: Type a command after it!\n📋 Try: {PREFIX}help to see all commands.
+CMD_NOT_FOUND=🤔 I couldn't recognize what you typed. Maybe you mean {PREFIX}{SUGGESTION} ?
+
+# ── Role System ──────────────────────────────────────────
+ROLE_ADMIN_ONLY=🛡️ This command requires Admin role or higher!
+ROLE_MOD_ONLY=🔰 This command requires Moderator role or higher!
+ROLE_OWNER_ONLY=👑 This command is for the Owner only!
+ROLE_SET_SUCCESS=✅ Role {ROLE} has been assigned to user `{ID}`.
+ROLE_REMOVE_SUCCESS=✅ Role removed from user `{ID}`. Now a regular user.
+ROLE_VIEW=👤 User Role Info\n──────────────────\n🆔 ID     : `{ID}`\n📛 Name   : {NAME}\n🎖️ Role   : {ROLE}\n──────────────────
+ROLE_INVALID=❌ Invalid role! Valid roles: mod, user
+ROLE_NO_TARGET=❌ Usage: /{CMD} [user_id]
+ROLE_SELF=❌ You cannot change your own role.
+
+# ── Admin Commands ───────────────────────────────────────
+ADMIN_ONLY=❌ This command is for admins only!
+USER_BANNED=✅ User `{USER_ID}` has been banned.
+USER_UNBANNED=✅ User `{USER_ID}` has been unbanned.
+USER_NOT_FOUND=❌ User not found in database.
+BROADCAST_SENT=📢 Broadcast sent to {COUNT} users successfully.
+BROADCAST_PROGRESS=📢 Broadcasting... {DONE}/{TOTAL}
+
+# ── Ban / Unban ─────────────────────────────────────────
+BAN_OWNER=❌ You cannot ban the owner!
+BAN_ADMIN=❌ You cannot ban an admin!
+BAN_SELF=❌ You cannot ban yourself!
+ALREADY_BANNED=⚠️ User `{USER_ID}` is already banned.
+NOT_BANNED=⚠️ User `{USER_ID}` is not banned.
