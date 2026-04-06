@@ -1,7 +1,7 @@
 {
   "bot": {
-    "token": "8677573246:AAF7ttXr8wIXqEy0eL9CYnL8KRgeIo40b78",
-    "username": "x69xbot_bot",
+    "token": "bot_token",
+    "username": "bot_username",
     "prefix": ")"
   },
   "admins": [7047432575],
